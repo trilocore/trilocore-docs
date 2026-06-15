@@ -11,7 +11,7 @@ Static HTML, no build step. Pages:
 
 ## Hosting (GitHub Pages)
 `CNAME` is set to `doc.trilocore.com`. Enable Pages on this repo (deploy from
-`main`, root), then add a DNS **CNAME** record `doc → kronotitans-ltd.github.io`
+`main`, root), then add a DNS **CNAME** record `doc → trilocore.github.io`
 (or an A/ALIAS per GitHub Pages docs). Until DNS is pointed, the site is
 reachable at the repo's `github.io` URL.
 
