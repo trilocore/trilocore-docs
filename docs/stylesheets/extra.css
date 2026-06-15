@@ -1,0 +1,14 @@
+/* Trilocore brand accent on the Material slate (dark) theme */
+:root > * {
+  --md-primary-fg-color:        #0a0c10;
+  --md-primary-fg-color--light: #0f1115;
+  --md-primary-fg-color--dark:  #0a0c10;
+  --md-accent-fg-color:         #58a6ff;
+}
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:   #0a0c10;
+  --md-typeset-a-color:    #58a6ff;
+  --md-code-bg-color:      #0f1115;
+}
+.md-header { border-bottom: 1px solid #2d333b; }
+.md-typeset h1, .md-typeset h2 { letter-spacing: -.01em; }
