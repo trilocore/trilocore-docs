@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Trilocore Docs — BEVM &amp; Janus</title>
+<meta name="description" content="Documentation for Trilocore: how to use the BEVM security workbench and the Janus AI analyst to test smart contracts and prove exploits in your browser."/>
+<meta name="theme-color" content="#0a0c10"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/docs.css"/>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="/">
+    <svg width="20" height="20" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+      <polygon points="14,7 21,11 21,17 14,21 7,17 7,11" fill="rgba(88,166,255,.1)" stroke="#58a6ff" stroke-width="1"/>
+      <circle cx="14" cy="14" r="2.5" fill="#3fb950"/>
+    </svg>
+    Trilocore <span class="tag">Docs</span>
+  </a>
+  <nav class="topnav">
+    <a href="/" class="active">Home</a>
+    <a href="/bevm.html">BEVM</a>
+    <a href="/janus.html">Janus</a>
+  </nav>
+  <a class="cta" href="https://bevm.trilocore.ai/" target="_blank" rel="noopener">Launch BEVM ↗</a>
+</div>
+
+<div class="content" style="max-width:860px;margin:0 auto">
+  <h1>Trilocore Documentation</h1>
+  <p class="lead">
+    Trilocore is smart-contract security testing, made visual — a security workbench
+    for the EVM, right in your browser. Disassemble any contract, see its selectors and
+    control-flow, fuzz it, and <strong>prove real exploits on a mainnet fork</strong> — no
+    command line, no local setup.
+  </p>
+
+  <div class="note">
+    New here? Open <a href="https://bevm.trilocore.ai/" target="_blank" rel="noopener">bevm.trilocore.ai</a>,
+    sign in, paste a contract address, and run a passive scan. The
+    <a href="/bevm.html#getting-started">Getting Started</a> guide walks through it in 2 minutes.
+  </div>
+
+  <h2>The two tools</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🔬 BEVM — security workbench</h3>
+      <p>A visual EVM workbench: disassembly, control-flow graph, calldata decoder,
+      a GPU-accelerated fuzzer with 200+ detectors, transaction repeater, storage
+      editor, and mainnet-fork exploit replay.</p>
+      <p><a href="/bevm.html">Read the BEVM guide →</a></p>
+    </div>
+    <div class="card">
+      <h3>🤖 Janus — AI analyst</h3>
+      <p>An AI model that reasons like an attacker: analyze a contract or a finding,
+      get a plain-English exploit explanation and an attack-chain walkthrough.</p>
+      <p><a href="/janus.html">Read the Janus guide →</a></p>
+    </div>
+  </div>
+
+  <h2 id="getting-started">Getting started</h2>
+  <ol class="steps">
+    <li>Go to <a href="https://bevm.trilocore.ai/" target="_blank" rel="noopener">bevm.trilocore.ai</a>
+      and sign in. One account works across BEVM and Janus (shared sign-in).</li>
+    <li>In the <strong>Smart Contract</strong> panel, paste a contract <strong>address</strong>
+      (mainnet) or raw <strong>bytecode</strong>. Trilocore fetches the code and disassembles it.</li>
+    <li>Run a <strong>Passive scan</strong> to get detector findings, or open the
+      <strong>Visual Graph</strong> to inspect selectors and control-flow blocks.</li>
+    <li>To go deeper, <strong>fuzz</strong> the target (Intruder / active scan) and
+      <strong>replay</strong> a candidate exploit on a forked mainnet to confirm it's real.</li>
+    <li>Open <a href="https://janus.trilocore.ai/" target="_blank" rel="noopener">janus.trilocore.ai</a>
+      and ask Janus to explain any finding in plain English.</li>
+  </ol>
+
+  <h2>Key ideas</h2>
+  <table class="kvtable">
+    <tr><th>Term</th><th>What it means in Trilocore</th></tr>
+    <tr><td>Session / Workspace</td><td>An isolated analysis context with its own mainnet fork. Open one to load a target and run tools.</td></tr>
+    <tr><td>Aliases</td><td>Friendly names for addresses used across panels: <code>attacker</code>, <code>target</code>, <code>me</code>, plus <code>zero</code> and <code>max</code>.</td></tr>
+    <tr><td>Passive vs Active</td><td><b>Passive</b> = static detectors over the bytecode (fast). <b>Active</b> = fuzzing/execution against a fork (finds &amp; proves real exploits).</td></tr>
+    <tr><td>Fork replay</td><td>Re-executing a candidate exploit against real, forked mainnet state — so a finding is a proven exploit, not a guess.</td></tr>
+  </table>
+
+  <div class="note">
+    Need help or want to support the project? Contact
+    <a href="mailto:saiteja@trilocore.com">saiteja@trilocore.com</a>.
+  </div>
+</div>
+
+<footer class="docfoot">
+  © 2026 Trilocore · <a href="https://trilocore.com/">trilocore.com</a> ·
+  <a href="https://bevm.trilocore.ai/">BEVM</a> ·
+  <a href="https://janus.trilocore.ai/">Janus</a>
+</footer>
+</body>
+</html>
