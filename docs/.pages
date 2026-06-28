@@ -1,0 +1,5 @@
+nav:
+  - Home: index.md
+  - BEVM (workbench): bevm.md
+  - Janus (AI analyst): janus.md
+  - Audit Reports: audits

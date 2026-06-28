@@ -36,10 +36,10 @@ extra:
       link: https://bevm.trilocore.ai/
   generator: false
 
-nav:
-  - Home: index.md
-  - BEVM (workbench): bevm.md
-  - Janus (AI analyst): janus.md
+# Navigation is driven from the filesystem by the awesome-pages plugin: the top-level
+# order lives in docs/.pages, and docs/audits/.pages governs the audit-report ordering
+# (newest first). This means Janus can drop a new report into docs/audits/ without
+# anyone editing mkdocs.yml.
 
 markdown_extensions:
   - admonition
@@ -56,3 +56,7 @@ markdown_extensions:
 
 plugins:
   - search
+  # awesome-pages auto-includes new files under docs/audits/ (sorted newest-first via
+  # docs/audits/.pages) — so Janus dropping a new report into that folder is enough; we
+  # do NOT need to edit mkdocs.yml on every audit.
+  - awesome-pages
