@@ -1,7 +1,7 @@
 # trilocore-docs
 
 Documentation site for Trilocore — how to use **BEVM** (security workbench) and
-**Janus** (AI analyst). Served at **docs.trilocore.ai**.
+**Janus** (AI analyst). Served at **doc.trilocore.com**.
 
 Static HTML, no build step. Pages:
 - `index.html` — overview + getting started
@@ -10,8 +10,8 @@ Static HTML, no build step. Pages:
 - `assets/docs.css` — shared dark theme (matches trilocore.com)
 
 ## Hosting (GitHub Pages)
-`CNAME` is set to `docs.trilocore.ai`. Enable Pages on this repo (deploy from
-`main`, root), then add a DNS **CNAME** record `docs → trilocore.github.io`
+`CNAME` is set to `doc.trilocore.com`. Enable Pages on this repo (deploy from
+`main`, root), then add a DNS **CNAME** record `doc → trilocore.github.io`
 (or an A/ALIAS per GitHub Pages docs). Until DNS is pointed, the site is
 reachable at the repo's `github.io` URL.
 

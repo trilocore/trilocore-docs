@@ -18,7 +18,7 @@ copy-pasting, no manual reformatting.
        committed into [`trilocore/trilocore-docs`](https://github.com/trilocore/trilocore-docs)
        under `docs/audits/`.
     4. GitHub Pages picks up the push and the report goes live at
-       `docs.trilocore.ai/audits/...`.
+       `doc.trilocore.com/audits/...`.
 
 ## Index
 

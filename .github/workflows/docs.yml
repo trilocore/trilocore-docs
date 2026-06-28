@@ -2,7 +2,7 @@ name: docs
 
 # Build the MkDocs Material site and deploy it to GitHub Pages.
 # Pages source must be set to "GitHub Actions" (Settings → Pages → Build and
-# deployment → Source: GitHub Actions). The CNAME (docs/CNAME = docs.trilocore.ai)
+# deployment → Source: GitHub Actions). The CNAME (docs/CNAME = doc.trilocore.com)
 # is copied into the built site so the custom domain is preserved.
 
 on:
