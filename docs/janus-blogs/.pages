@@ -1,0 +1,6 @@
+title: Janus Blogs
+nav:
+  - index.md
+  - "..."
+order: desc
+sort_type: natural
